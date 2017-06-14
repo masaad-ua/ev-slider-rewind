@@ -1,0 +1,22 @@
+{
+  "name": "sliderScroll",
+  "version": "0.0.1",
+  "main": "sliderScroll.js",
+  "authors": [
+    "Maksym Osypchuk <max-modern@mail.ru>"
+  ],
+  "description": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+	"jquery": "#2.1.4"
+  }
+}

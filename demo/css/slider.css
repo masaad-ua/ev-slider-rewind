@@ -1,0 +1,365 @@
+/*Common style*/
+
+.slider-container{
+    width: 100%;
+    background: #dcdada;
+}
+.title-slider{
+    text-align: center;
+}
+.photo-gallery{
+    margin: 0 auto;
+    position: relative;
+    width: 51.1458%;
+    min-width: 980px;
+    display: flex;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Задаем сброс обтекания */
+.clear {
+    margin-top: -1px;
+    height: 1px;
+    clear:both;
+    zoom: 1;
+}
+/* Slider */
+.slider {
+    /* Ширина контейнера */
+    width: 978px;
+    /* Позиционирование */
+    position: relative;
+}
+.slider1 {
+    /* Ширина контейнера */
+    width: 98px;
+    position: relative;
+    /* margin-top: 1.6em; */
+    /* margin-bottom: 2.55em; */
+    margin: 1.6em auto 2.55em auto;
+}
+/* Двойной клик по кнопкам вперед/назад вызывает выделение всех элементов слайдера,
+поэтому предотвращаем это */
+.slider::-moz-selection { background: transparent; color: #fff; text-shadow: none; }
+.slider::selection { background: transparent; color: #fff; text-shadow: none; }
+
+.slide-list {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    /* Скроем то что выходит за границы */
+    overflow: hidden;
+}
+
+.slide-list1 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    /* Скроем то что выходит за границы */
+    overflow: hidden;
+}
+.slide-wrap {
+    position: relative;
+    left: 0;
+    top: 0;
+    /* максимально возможная ширина обертки слайдера */
+    width: 10000000px;
+    display: flex;
+
+    display:-webkit-box;
+    -webkit-box-orient:horizontal;
+
+    flex-direction: row;
+}
+.slide-wrap1 {
+    position: relative;
+    left: 0;
+    top: 0;
+    /* максимально возможная ширина обертки слайдера */
+    width: 98px;
+    display: flex;
+
+    display:-webkit-box;
+    -webkit-box-orient:horizontal;
+    -webkit-box-pack:justify;
+
+    flex-direction: row;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+
+}
+.slide-item {
+    width: 326px;
+    position: relative;
+   
+}
+.slide-item img{
+     border: 1px solid #adaaaa;
+    box-sizing: border-box;
+}
+.slide-item1 {
+    width: 14px;
+}
+.slide-cover {
+    cursor: pointer;
+    width: 326px;
+    height: 326px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+
+/* навигация вперед/назад */
+.navy {
+    /* абсолютное позиционирование */
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 326px;
+    /* ширина элементов */
+    width: 30px;
+    cursor: pointer;
+}
+.prev-slide {
+    left: 0;
+    background: transparent url(../images/left-arrow.png) 1px 50% no-repeat;
+}
+.next-slide {
+    right: 0;
+    background: transparent url(../images/right-arrow.png) 1px 50% no-repeat;
+}
+.navy.disable {
+    background: #dbdbdb;
+}
+.preview {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 1em;
+    left: 15em;
+    background-color: White;
+    z-index: 1005;
+}
+.left {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    background: url("../images/LeftArrowBig.png");
+}
+.right {
+    position: absolute;
+    left: 400px;
+    top:200px;
+    height: 100px;
+    width: 100px;
+    background: url("../images/RightArrowBig.png");
+}
+/*Фон появляющийся за всплывающей формой*/
+.black-overlay{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index:1001;
+        -moz-opacity: 0.6;
+        opacity:.60;
+        filter: alpha(opacity=60);
+ }
+
+@media only screen and (max-width: 980px)  {
+
+    .slider {
+        /* Ширина контейнера */
+        width: 900px;
+    }
+    .slide-item {
+        width: 300px;
+        height: 300px;
+    }
+
+}
+@media only screen and (max-width: 900px)  {
+
+    .slider {
+        /* Ширина контейнера */
+        width:680px;
+    }
+    .slide-item {
+        width: 227px;
+        height: 226px;
+    }
+    .slide-item img {
+        width: 227px;
+        height: 226px;
+    }
+    .slide-cover {
+        width:227px;
+        height: 226px;
+    }
+    .navy {
+        /* абсолютное позиционирование */
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        height: 226px;
+        /* ширина элементов */
+        width: 30px;
+        cursor: pointer;
+    }
+    .slide-wrap1 {
+        position: relative;
+        left: 0;
+        top: 0;
+        /* максимально возможная ширина обертки слайдера */
+        width: 70px;
+        height: 10px;
+        display: flex;
+        flex-direction: row;
+        -webkit-justify-content: space-between;
+        -webkit-align-items: center;
+
+    }
+    .slide-item1 {
+        width: 10px;
+    }
+    .slide-item1 img{
+        vertical-align: top;
+        width: 10px;
+        height: 10px;
+        /*position: relative;
+        /*top: -5px\9;*/
+    }
+
+    /*11IE*/
+    _:-ms-lang(x),.slide-item1 img{
+        position: relative;
+        top: -5px;
+    }
+
+    .preview {
+        display: block;
+        opacity: 0;
+        position: absolute;
+        top: 4%;
+        left: 27%;
+        background-color: White;
+        z-index: 1005;
+    }
+    .left {
+        position: absolute;
+        top: 9em;
+        left: 0;
+        height: 70px;
+        width: 70px;
+        background: url("../images/LeftArrowBig.png");
+        background-size: cover;
+    }
+    .right {
+        position: absolute;
+        top: 9em;
+        left:17.5em;
+        height: 70px;
+        width:70px;
+        background: url("../images/RightArrowBig.png");
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width:700px)  {
+
+    .slider {
+        /* Ширина контейнера */
+        width:260px;
+    }
+    .slide-item {
+        width: 130px;
+        height: 130px;
+    }
+    .slide-item img{
+        width: 130px;
+        height: 130px;
+    }
+    .slide-cover {
+        width: 130px;
+        height: 130px;
+    }
+
+    .navy {
+        /* абсолютное позиционирование */
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        height: 130px;
+        /* ширина элементов */
+        width: 30px;
+        cursor: pointer;
+    }
+    .slide-wrap1 {
+        position: relative;
+        left: 0;
+        top: 0;
+        /* максимально возможная ширина обертки слайдера */
+        width: 70px;
+        height: 10px;
+        display: flex;
+        flex-direction: row;
+        -webkit-justify-content: space-between;
+        -webkit-align-items: center;
+        margin: 0 auto;
+
+    }
+    .slide-item1 {
+        /*height: 10px;*/
+        /*width: 10px;*/
+        /*background: url("../images/sliderRing.png");*/
+        background-size: cover;
+        display: block;
+        padding: 0;
+    }
+    .center {
+        width: 10px;
+        /*background: url("../images/sliderCircle.png");*/
+        background-size: cover;
+    }
+    .preview {
+        display: block;
+        opacity: 0;
+        position: absolute;
+        top: 4%;
+        left: 12%;
+        background-color: White;
+        z-index: 1005;
+    }
+    .left {
+        position: absolute;
+        top: 4.5em;
+        left: 0;
+        height: 50px;
+        width: 50px;
+        background: url("../images/LeftArrowBig.png");
+        background-size: cover;
+        z-index: 2;
+    }
+    .right {
+        position: absolute;
+        top: 4.5em;
+        left:  9.3em;
+        height: 50px;
+        width: 50px;
+        background: url("../images/RightArrowBig.png");
+        background-size: cover;
+
+    }
+}
