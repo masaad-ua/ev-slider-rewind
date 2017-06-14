@@ -1,4 +1,4 @@
-#SliderScroll
+# SliderScroll
 
 Reveal CSS animation as you scroll down a page.
 By default, you can use it to trigger [animate.css](https://github.com/daneden/animate.css) animations.
