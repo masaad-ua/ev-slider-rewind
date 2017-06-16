@@ -269,7 +269,7 @@ $(document).ready(function($) {
 	/* иницилизируем функцию слайдера */
 	htmSlider();
 
-	/*Делегируем функцию динамически добавленными элементами в jQuery*/
+	/*Hover in jQuery*/
 	$('.slide-wrap').on('mouseover','.slide-item',function(){
 		var fullPath = $('img',this).attr('src');
 		var arr = fullPath.split("/");
@@ -288,6 +288,7 @@ $(document).ready(function($) {
 		$('span',this).css({visibility:'visible',opacity:'1',background:'url('+ newImg + ')center/cover'});
 
 	});
+
 	$('.slide-wrap').on('mouseout','.slide-item',function(){
 		$('span',this).css({visibility:'hidden',opacity:'o',background:'none'})
 	});

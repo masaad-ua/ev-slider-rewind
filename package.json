@@ -1,0 +1,18 @@
+{
+  "name": "ev-slider-rewind",
+  "version": "0.0.1",
+  "description": "Reveal CSS animation as you scroll down a page.\r By default, you can use it to trigger [animate.css](https://github.com/daneden/animate.css) animations.\r But you can easily change the settings to your favorite animation library.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masaad-ua/sliderRewind.git"
+  },
+  "author": "Maksym Osypchuk <max-modern@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masaad-ua/sliderRewind/issues"
+  },
+  "homepage": "https://github.com/masaad-ua/sliderRewind#readme"
+}
