@@ -32,4 +32,5 @@ Advantages:
 ```javascript
 new WOW().init();
 ```
-
+### Demo 
+https://masaad-ua.github.io/sliderRewind/demo/
