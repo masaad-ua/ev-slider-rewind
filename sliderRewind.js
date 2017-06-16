@@ -75,7 +75,7 @@ $(document).ready(function($) {
 				var newCircle=$(this).find('img');
 				var oldCircle=$('.slide-item1 img[src="images/sliderCircle.png"]');
 
-				var numNewCircle=$(this).index();
+				var numNeCircle=$(this).index();
 				var numOldCircle=oldCircle.parent().index();
 				var diff=numNewCircle-numOldCircle;
 				var diff1=numOldCircle-numNewCircle;
